@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 # Split the command input into an array by space
 IFS=' ' read -r -a cmd_array <<< "$1"
