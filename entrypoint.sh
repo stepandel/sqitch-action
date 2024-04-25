@@ -4,4 +4,4 @@
 IFS=' ' read -r -a cmd_array <<< "$1"
 
 # Execute sqitch with the array
-/bin/sqitch "${cmd_array[@]}" --chdir "$2" --target "$3"
+/bin/sqitch "${cmd_array[@]}" --target "$2"
