@@ -14,10 +14,6 @@ This GitHub Action allows you to run Sqitch commands directly within your GitHub
 
 **Required** The Sqitch command you want to run, including all necessary options.
 
-### `base_dir`
-
-**Optional** The base directory from which to run Sqitch commands. Defaults to `.` (the root of your repository).
-
 ### `target`
 
 **Required** The target database to run the commands against. This should usually be a secret that holds your database connection string or a reference to a pre-configured target in your Sqitch configuration.
