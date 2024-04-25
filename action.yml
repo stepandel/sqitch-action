@@ -1,22 +1,22 @@
 # action.yml
-name: 'Sqitch'
-description: 'Run sqitch'
+name: "Sqitch action"
+description: "Run sqitch"
 inputs:
   command:
-    description: 'Command to run'
+    description: "Command to run"
     required: true
   base_dir:
-    description: 'Base directory to run from'
+    description: "Base directory to run from"
     required: false
-    default: '.'
+    default: "."
   target:
-    description: 'Target'
+    description: "Target"
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.command }}
-    - '--chdir'
+    - "--chdir"
     - ${{ inputs.base_dir }}
     - ${{ inputs.target }}
